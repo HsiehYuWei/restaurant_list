@@ -1,10 +1,14 @@
 # 餐廳清單
 
-![restaurant](https://user-images.githubusercontent.com/119351384/207297168-79a4a74a-a845-47db-b1f5-53e0bebcdbe2.jpg)
+![restaurant-CRUD](https://user-images.githubusercontent.com/119351384/208982038-f1007035-4d87-4c1c-8b91-3ff9c7a57426.jpg)
 
 ## 介紹
 
-提供各式異國料理，可搜尋餐廳，查看餐廳資訊
+美食地圖，紀錄口袋名單。
+* 可新增名單
+* 可查看詳細資料(店名、照片、地址及地圖...)
+* 可修改名單
+* 可刪除名單
 
 ## 使用手冊
 
