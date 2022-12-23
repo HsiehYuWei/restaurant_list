@@ -55,9 +55,10 @@ app.post('/restaurants', (req, res) => {
 
 //搜尋功能
 app.get('/search', (req, res) => {
+
   const keywords = req.query.keywords
   const reataurantType = req.query.keywords.toLowerCase()
-  
+
 
   Restaurant.find({})
     .lean()
@@ -92,9 +93,9 @@ app.get('/restaurants/:restaurant_id/edit', (req, res) => {
 })
 
 //編輯資料功能
-app.put('/restaurants/:restaurant_id', (req, res) => {
+app.post('/restaurants/:restaurant_id', (req, res) => {
   const restaurantId = req.params.restaurant_id
-
+  
   return Restaurant.findByIdAndUpdate(restaurantId, req.body)
     .then(() => res.redirect(`/restaurants/${restaurantId}`))
     .catch(err => console.log(error))

@@ -1,6 +1,6 @@
 <h1 class="mb-1 restaurant-show-title ">編輯餐廳</h1>
 <div class="container" style="width:800px">
-  <form action="/restaurants/{{restaurants._id}}" method="PUT">
+  <form action="/restaurants/{{restaurants._id}}" method="POST">
     <div class="mb-3">
       <label for="name"><i class="fa-solid fa-utensils text-solid m-1"></i>店名:</label>
       <input type="text" value="{{restaurants.name}}" class="form-control" id="name" name="name" required />
