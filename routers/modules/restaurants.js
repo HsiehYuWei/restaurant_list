@@ -8,14 +8,6 @@ router.get('/new', (req, res) => {
   return res.render('new')
 })
 
-router.get('/:restaurant_id/new', (req, res) => {
-  return res.render('new')
-})
-
-router.get('/:restaurant_id/restaurants/new', (req, res) => {
-  return res.render('new')
-})
-
 //新增功能
 router.post('/', (req, res) => {
   Restaurant.create(req.body)
